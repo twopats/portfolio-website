@@ -8,7 +8,7 @@ import pumpkinBoy from "../images/pumpkinBoy.png";
 
 const AboutMe = () => {
   return (
-    <Content1>
+    <Content1 id="about">
       <AboutStyled>
         <div class="text-container">
           <h1 class="section-heading">Hello, I'm Patipat.</h1>

@@ -1,8 +1,7 @@
 import React from "react";
 //Styling
 import styled from "styled-components";
-//Animation
-import { motion } from "framer-motion";
+
 //Emailsjs
 import emailjs from "emailjs-com";
 //Images
@@ -30,7 +29,7 @@ const Contacts = () => {
     e.target.reset();
   }
   return (
-    <ContactsStyled className="parallax">
+    <ContactsStyled id="contact">
       <div className="heading">
         <h1>Get In Touch</h1>
         <div className="line"></div>
@@ -69,11 +68,12 @@ const Contacts = () => {
           </div>
           <div className="form-group">
             <input
-              type="text"
-              className="form-control"
+              type="text-area"
+              className="form-control message-input"
               placeholder="Enter a message."
               name="message"
               size="200"
+              maxLength="500"
             />
           </div>
           <input className="submit-button" type="submit" value="Send Message" />
@@ -85,15 +85,18 @@ const Contacts = () => {
 
 export default Contacts;
 
-const ContactsStyled = styled(motion.div)`
+const ContactsStyled = styled.div`
   display: flex;
   flex-direction: column;
-  height: 120vh;
+  height: max-content;
   width: 100%;
   align-items: center;
   justify-content: center;
   /* background: #1b1b1b; */
+  background-repeat: no-repeat;
+  background-image: url(${workbg});
   .heading {
+    margin-top: 2rem;
     justify-self: center;
     align-self: center;
     display: flex;
@@ -124,24 +127,14 @@ const ContactsStyled = styled(motion.div)`
       text-shadow: 1px 1px 3px black;
       font-weight: lighter;
       /* letter-spacing: px; */
+      @media (max-width: 768px) {
+        width: 80%;
+      }
     }
   }
-  .submit-button {
-    margin-top: 1rem;
-    cursor: pointer;
-    padding: 0.8rem 3rem;
-    border-radius: 5px;
-    border: none;
-    background: transparent;
-    box-shadow: 1px 1px 10px rgba(209, 209, 209, 0.3);
-    background: #10c9da;
-    color: white;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: bolder;
-    letter-spacing: 1px;
-    font-family: "Gotham", sans-serif;
-  }
+
+  //clear
+
   .form-container {
     display: flex;
     justify-content: center;
@@ -149,7 +142,7 @@ const ContactsStyled = styled(motion.div)`
     height: 60%;
     padding: 3rem 2rem;
     border-radius: 16px;
-
+    margin-bottom: 2rem;
     width: 70%;
 
     form {
@@ -170,7 +163,7 @@ const ContactsStyled = styled(motion.div)`
     }
     .form-control {
       width: 90%;
-      height: auto;
+      height: max-conent;
       margin: 1rem;
       border: none;
       background: transparent;
@@ -182,6 +175,7 @@ const ContactsStyled = styled(motion.div)`
       transition: all 0.5s ease;
       justify-self: center;
       align-self: center;
+      max-height: 10rem;
 
       &::placeholder {
         color: white;
@@ -192,26 +186,38 @@ const ContactsStyled = styled(motion.div)`
         border-bottom: 2.5px solid #10c9da;
       }
     }
-  }
-  &:after {
-    content: " ";
-    position: absolute;
-    transform: translateZ(-0.5px) scale(1.5);
-    background-size: cover;
-    z-index: -100;
-    background-repeat: no-repeat;
-    background-image: url(${workbg});
-    left: 0;
-    right: 0;
-    top: 900vh;
-    background-position: center center;
-    height: 100%;
-    width: 100%;
-    @media (max-width: 1200px) {
-      top: 980vh;
+    .message-input {
+      height: max-content;
+      overflow: hidden;
     }
-    @media (max-width: 600px) {
-      top: 1080vh;
+    .submit-button {
+      margin-top: 1rem;
+      cursor: pointer;
+      padding: 0.8rem 3rem;
+      border-radius: 5px;
+      border: none;
+      background: transparent;
+      box-shadow: 1px 1px 10px rgba(209, 209, 209, 0.3);
+      background: #10c9da;
+      color: white;
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: bolder;
+      letter-spacing: 1px;
+      font-family: "Gotham", sans-serif;
+      outline: none;
+      transition: all 0.1s ease;
+      &:hover {
+        background: #12dcee;
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 3rem 0rem;
+      width: 100%;
+      h2 {
+        width: 80%;
+      }
     }
   }
 `;

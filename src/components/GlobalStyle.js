@@ -10,6 +10,7 @@ const Globalstyle = createGlobalStyle`
 
     body{
         color:black;
+        overflow: hidden;
     }
 
     html{

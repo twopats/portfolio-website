@@ -15,7 +15,7 @@ import { IoMdCheckmark } from "react-icons/io";
 
 const Skills = () => {
   return (
-    <SkillsStyled>
+    <SkillsStyled id="skills">
       <div class="text-container">
         <h1 class="section-heading">Skills</h1>
         <span class="line"></span>

@@ -9,7 +9,7 @@ import ProjectCapture from "./ProjectCapture";
 import ProjectWaves from "./ProjectWaves";
 const Portfolio = () => {
   return (
-    <PortfolioStyled>
+    <PortfolioStyled id="portfolio">
       <Canvas>
         <div className="section-heading">
           <h1>Some Of My Work</h1>

@@ -12,7 +12,7 @@ import { FaHandshake } from "react-icons/fa";
 
 const Services = () => {
   return (
-    <ServicesStyled className="section">
+    <ServicesStyled className="section" id="services">
       <div class="text-container">
         <h1 class="section-heading">What I Do</h1>
         <span class="line"></span>

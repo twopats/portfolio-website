@@ -9,7 +9,7 @@ const Footer = () => {
 export default Footer;
 
 const FooterStyled = styled.div`
-  height: 30vh;
+  height: 15vh;
   width: 100%;
   background: #1b1b1b;
 `;

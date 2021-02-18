@@ -9,6 +9,8 @@ import Portfolio from "./components/Portfolio";
 import ProjectsRibbon from "./components/ProjectsRibbon";
 import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
+import Nav from "./components/Nav";
+// import TestComponent from "./components/TestComponent";
 //Global Styles
 import GlobalStyle from "./components/GlobalStyle";
 //Animation
@@ -18,6 +20,7 @@ function App() {
   return (
     <Wrapper>
       <GlobalStyle />
+      <Nav />
       <Hero />
       <AboutMe />
       <Services />
@@ -36,6 +39,7 @@ export default App;
 const Wrapper = styled(motion.div)`
   height: 100vh;
   overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   perspective: 2px;
-  position: relative;
 `;
