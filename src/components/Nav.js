@@ -42,7 +42,7 @@ const NavStyled = styled.div`
     width: 100%;
     font-size: 0.8rem;
     letter-spacing: 1px;
-    font-family: "Gotham", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: medium;
     text-transform: uppercase;
     list-style: none;
@@ -53,6 +53,11 @@ const NavStyled = styled.div`
   a {
     text-decoration: none;
     color: white;
+    transition: all 0.2s ease;
+    &:hover {
+      color: #10c9da;
+      scale: 1.2;
+    }
   }
   @media (max-width: 600px) {
     ul {
@@ -60,4 +65,3 @@ const NavStyled = styled.div`
     }
   }
 `;
-

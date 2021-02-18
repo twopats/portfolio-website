@@ -31,6 +31,7 @@ const HeroStyled = styled(motion.section)`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   color: white;
   .introduction {
     position: relative;
@@ -41,6 +42,7 @@ const HeroStyled = styled(motion.section)`
     text-align: center;
     padding: 1em;
     z-index: 501;
+    margin-bottom: 3rem;
   }
 
   .introduction .name h1 {
@@ -58,6 +60,8 @@ const HeroStyled = styled(motion.section)`
     color: white;
     text-transform: uppercase;
     text-shadow: 0.08em 0.07em 7px #f3f3f3;
+  }
+
   }
   &:after {
     content: " ";
@@ -89,5 +93,5 @@ const Clouds = styled(motion.div)`
   width: 110vw;
   height: 110vh;
   opacity: 0.15;
-  z-index: 998;
+  z-index: 9;
 `;
