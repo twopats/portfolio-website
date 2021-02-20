@@ -62,7 +62,6 @@ const HeroStyled = styled(motion.section)`
     text-shadow: 0.08em 0.07em 7px #f3f3f3;
   }
 
-  }
   &:after {
     content: " ";
     position: absolute;
