@@ -8,7 +8,11 @@ import { RibbonStyled } from "../components/ResumeRibbon";
 const ProjectsRibbon = () => {
   return (
     <RibbonStyled>
-      <a className="focal-point" href="https://github.com/lpatipat">
+      <a
+        className="focal-point"
+        href="https://github.com/lpatipat"
+        target="_blank"
+      >
         <h2>See All Projects</h2>
       </a>
     </RibbonStyled>
