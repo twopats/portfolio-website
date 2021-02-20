@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
 import Skills from "./components/Skills";
-import ResumeRibbon from "./components/ResumeRibbon";
+// import ResumeRibbon from "./components/ResumeRibbon";
 import Portfolio from "./components/Portfolio";
 import ProjectsRibbon from "./components/ProjectsRibbon";
 import Contacts from "./components/Contacts";
@@ -15,6 +15,7 @@ import Nav from "./components/Nav";
 import GlobalStyle from "./components/GlobalStyle";
 //Animation
 import { motion } from "framer-motion";
+// what if there is another one that i need to work on and i just dont know it why didnt i just ask for
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       <AboutMe />
       <Services />
       <Skills />
-      <ResumeRibbon />
+      {/* <ResumeRibbon /> */}
       <Portfolio />
       <ProjectsRibbon />
       <Contacts />

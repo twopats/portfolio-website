@@ -8,7 +8,11 @@ const ResumeRibbon = () => {
   return (
     <RibbonStyled>
       <div className="focal-point">
-        <h2>view my full resume</h2>
+        <h2>
+          <a href="../data/resume.pdf" download>
+            view my full resume
+          </a>
+        </h2>
       </div>
     </RibbonStyled>
   );
@@ -29,6 +33,9 @@ export const RibbonStyled = styled(motion.div)`
     justify-self: center;
     text-align: center;
     width: 100%;
+  }
+  a {
+    text-decoration: none;
   }
   h2 {
     font-weight: bold;
