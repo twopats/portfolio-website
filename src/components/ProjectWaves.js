@@ -35,7 +35,7 @@ const ProjectCapture = () => {
               DEMO
             </a>
             <a
-              href="https://github.com/lpatipat/react-player"
+              href="https://github.com/lpatipat/react-player/tree/master"
               target="_blank"
               className="code"
             >

@@ -35,7 +35,7 @@ const ProjectCapture = () => {
               DEMO
             </a>
             <a
-              href="https://github.com/lpatipat/capture"
+              href="https://github.com/lpatipat/capture/tree/master"
               target="_blank"
               className="code"
             >
