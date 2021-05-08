@@ -10,7 +10,7 @@ import clouds from "../images/clouds.png";
 const Hero = () => {
   return (
     <HeroStyled className="parallax">
-      <Clouds />
+      {/* <Clouds /> */}
       <div className="introduction">
         <div className="name">
           <h1>Patipat Luangwirun</h1>

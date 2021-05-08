@@ -10,11 +10,11 @@ const Globalstyle = createGlobalStyle`
 
     body{
         color:black;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     html{
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         background: #464648;
     }
     .section{

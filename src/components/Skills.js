@@ -45,7 +45,7 @@ const Skills = () => {
                   </div>
                   <div className="cell">
                     <div className="dev">
-                      <p>Jekyll</p>
+                      <p>SQL</p>
                     </div>
                   </div>
                   <div className="cell">
@@ -65,7 +65,7 @@ const Skills = () => {
                   </div>
                   <div className="cell">
                     <div className="dev">
-                      <p>Angular</p>
+                      <p>Express</p>
                     </div>
                   </div>
                   <div className="cell">
